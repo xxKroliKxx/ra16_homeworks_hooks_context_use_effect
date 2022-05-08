@@ -20,6 +20,7 @@ export default function Details({id}) {
         setObj(undefined)
     }, [id])
 
+
     if (obj === undefined && !load.current) {
         return <></>
     }
