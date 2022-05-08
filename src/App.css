@@ -1,0 +1,60 @@
+
+body {
+    font-family: 'Share';
+    font-size: 18px;
+    font-weight: 540;
+    color: rgba(36, 41, 47, 0.9);
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.list {
+    width: 300px;
+}
+
+.user, .detail {
+    border: 1px solid rgba(36, 41, 47, 0.2);
+    padding: 18px 15px;
+}
+
+.user:hover {
+    background-color: #218bff;
+    color: #ffffff;
+}
+
+.user:not(:last-child), .detail:not(:last-child) {
+    border-bottom: none;
+}
+
+.user:last-child, .detail:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user:first-child, .detail-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.details{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail {
+    padding: 8px 15px;
+}
+
+.details-name{
+    padding-top: 14px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    font-weight: 550;
+}
